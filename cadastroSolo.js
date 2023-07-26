@@ -1,4 +1,3 @@
-imovel = {} //objeto
 imoveis = [] //array
 
 do {
@@ -11,6 +10,7 @@ do {
 
     switch(opcao){
         case "1":
+            imovel = {} //objeto
             imovel.proprietario = prompt("Digite o nome do proprietario do imóvel")
             imovel.banheiros = prompt("Digite a quantidade de banheiros do imóvel")
             imovel.quartos = prompt("Digite a quantidade de quartos do imóvel ")
@@ -19,7 +19,7 @@ do {
             break
         case "2":
             for(i=0; i<imoveis.length; i++){
-                alert( "Imóvel: " + imoveis[i].length +
+                alert( "Imóvel: " + (i+1) +
                        "\nProprietário: " + imoveis[i].proprietario +
                        "\nQtd Banheiros: " + imoveis[i].banheiros +
                        "\nQtd Quartos: " + imoveis[i].quartos +
